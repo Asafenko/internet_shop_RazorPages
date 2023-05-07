@@ -1,0 +1,16 @@
+﻿@model internet_shop_RazorPages.ICatalogCategory
+@{
+    ViewData["Title"] = "Category Addition";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form method="POST">
+    <tr>
+        <td>Category: </td>
+        <td>
+            <input type="text" name="Name"/>@ViewData["category"]
+        </td>
+    </tr>
+    <input type="submit" value="SUBMIT" class="btn-dark"/>
+</form>

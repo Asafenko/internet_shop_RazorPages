@@ -1,0 +1,30 @@
+@model internet_shop_RazorPages.ICatalog
+
+@{
+    ViewData["Title"] = "List Product";
+}
+<h1>@ViewData["Title"]</h1>
+@foreach (var product in @Model.GetProducts())
+{
+   
+    <div class="myClass" >
+        <img src="@product.picture" alt="picture"/>
+        <a>
+                    @Html.ActionLink(
+                    $"(Id:{product.id})",
+                    "ProductInfo","Catalog",
+                    new {parentId = product.id })
+            </a>
+        <ul>
+            <li>Category: @product.category</li>
+            <li>Name: @product.name</li>
+            <li>Price: @product.price</li>
+            <li>Count: @product.count</li>
+            <li>ID: @product.id</li>
+        </ul>
+    </div>
+    
+}
+    
+                             
+

@@ -1,0 +1,11 @@
+.myClass{
+    border: 2px solid black;
+    width: 300px;
+    margin-top: 80px;
+    padding-left: 70px;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+}

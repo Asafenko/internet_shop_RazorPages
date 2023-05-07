@@ -1,0 +1,1 @@
+﻿Entities : Refer to the Model (from MVC)
